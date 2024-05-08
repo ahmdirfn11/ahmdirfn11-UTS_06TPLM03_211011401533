@@ -51,7 +51,7 @@ class ShoesList extends StatelessWidget {
           ),
           buildShoeItem(
             title: 'Nike ZoomX Vaporfly',
-            subtitle: "Men's Road Racing Shoe",
+            subtitle: "Women's Road Racing Shoe",
             price: '219,695',
             imageUrl: 'https://static.nike.com/a/images/t_default/c352f459-7930-4067-a51a-372df13b6ff2/vaporfly-3-womens-road-racing-shoes-4jJ4vQ.png',
             color: Colors.pink,
@@ -65,7 +65,7 @@ class ShoesList extends StatelessWidget {
           ),
           buildShoeItem(
             title: 'Nike Waffle One',
-            subtitle: "Men's Shoes",
+            subtitle: "Women's Shoes",
             price: '28,295',
             imageUrl: 'https://static.nike.com/a/images/t_default/8a32b0da-59ec-4c1a-8bcc-d7e7136fdaf5/waffle-debut-vintage-womens-shoes-rfRkv2.png',
             color: Colors.orange,
@@ -102,7 +102,7 @@ class ShoesList extends StatelessWidget {
                   ),
                   Text(
                     subtitle,
-                    style: TextStyle(fontSize: 14, color: Colors.grey),
+                    style: TextStyle(fontSize: 14, color: Colors.black),
                   ),
                   SizedBox(height: 25), // Menambah jarak antara subtitle dan price
                   
