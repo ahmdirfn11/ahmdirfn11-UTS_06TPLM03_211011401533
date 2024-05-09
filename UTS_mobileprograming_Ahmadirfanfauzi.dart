@@ -70,6 +70,24 @@ class ShoesList extends StatelessWidget {
             imageUrl: 'https://static.nike.com/a/images/t_default/8a32b0da-59ec-4c1a-8bcc-d7e7136fdaf5/waffle-debut-vintage-womens-shoes-rfRkv2.png',
             color: Colors.orange,
           ),
+          Padding(
+            padding: const EdgeInsets.all(16.0),
+            child: Text(
+              'Jawaban No 1\n'
+              'Perbedaan Native Development dan Hybrid Development\n'
+              'Native Development:\n'
+              '- Native development mencakup pengembangan aplikasi yang spesifik untuk platform tertentu, seperti iOS atau Android.\n'
+              '- Aplikasi native ditulis menggunakan bahasa pemrograman dan alat pengembangan resmi dari platform target. Misalnya, untuk iOS, Anda akan menggunakan bahasa Swift atau Objective-C dengan Xcode sebagai alat pengembangan, sementara untuk Android, Anda akan menggunakan Java atau Kotlin dengan Android Studio.\n'
+              '- Aplikasi native cenderung memiliki kinerja yang lebih baik karena mereka dioptimalkan untuk platform yang dituju dan menggunakan semua fitur dan fungsionalitas yang tersedia secara penuh.\n'
+              '- Pengembangan native membutuhkan waktu dan biaya yang lebih tinggi karena Anda harus membuat dan memelihara kode terpisah untuk setiap platform.\n'
+              'Hybrid Development:\n'
+              '- Hybrid development melibatkan pengembangan aplikasi menggunakan teknologi web seperti HTML, CSS, dan JavaScript, dan kemudian memasukkannya ke dalam wrapper yang dapat dijalankan pada platform yang berbeda.\n'
+              '- Dalam pengembangan hybrid, Anda menggunakan framework seperti React Native, Ionic, atau Xamarin. Ini memungkinkan Anda untuk menulis kode sekali dan menjalankannya di berbagai platform.\n'
+              '- Aplikasi hybrid dapat memiliki waktu pengembangan yang lebih cepat dan biaya yang lebih rendah karena Anda dapat menggunakan satu basis kode untuk beberapa platform.\n'
+              '- Namun, kinerja aplikasi hybrid mungkin tidak sebaik aplikasi native karena mereka tidak memiliki akses penuh ke fitur platform dan harus berjalan melalui lapisan abstraksi tambahan.',
+              style: TextStyle(fontSize: 16),
+            ),
+          ),
         ],
       ),
     );
@@ -86,7 +104,7 @@ class ShoesList extends StatelessWidget {
       child: Container(
         decoration: BoxDecoration(
           color: color,
-          borderRadius: BorderRadius.circular(10),
+          borderRadius: BorderRadius.circular(30),
         ),
         child: Padding(
           padding: const EdgeInsets.all(16.0),
@@ -105,7 +123,6 @@ class ShoesList extends StatelessWidget {
                     style: TextStyle(fontSize: 14, color: Colors.black),
                   ),
                   SizedBox(height: 25), // Menambah jarak antara subtitle dan price
-                  
                   Text(
                     price,
                     style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
@@ -113,10 +130,11 @@ class ShoesList extends StatelessWidget {
                 ],
               ),
               SizedBox(width: 16),
-              Image(
-              image: NetworkImage(imageUrl),
-              width: 200,
-              height: 150,
+              Image.network(
+                imageUrl,
+                width: 100,
+                height: 100,
+                fit: BoxFit.cover,
               ),
             ],
           ),
