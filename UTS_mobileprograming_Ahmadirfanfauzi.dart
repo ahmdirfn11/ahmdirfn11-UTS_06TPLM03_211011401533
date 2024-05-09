@@ -20,7 +20,7 @@ class ShoesList extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Shoes'),
+        title: Text('Shoes Ahmad Irfan Fauzi'),
         actions: [
           Padding(
             padding: const EdgeInsets.all(1),
