@@ -132,8 +132,8 @@ class ShoesList extends StatelessWidget {
               SizedBox(width: 16),
               Image.network(
                 imageUrl,
-                width: 100,
-                height: 100,
+                width: 200,
+                height: 150,
                 fit: BoxFit.cover,
               ),
             ],
